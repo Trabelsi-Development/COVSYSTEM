@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : 17 mai 2020, 05:05:12
+    Author     : hp
+*/
+
+.table-view {
+    -fx-background-color: #8291FF;
+    -fx-background-radius: 15;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size:13px; 
+    -fx-font-family:Calibri;
+}
+
+.table-view .column .label {
+    -fx-text-fill: black;
+    -fx-font-size:11px; 
+    -fx-font-family:Calibri;
+}
+.column-header-background {
+    -fx-background-color: #00315D;
+    -fx-background-radius: 15;
+    -fx-background-padding: 0 0 10 0;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-size: 40px;
+    -fx-border-width: 20;
+    -fx-background-radius: 5;
+    -fx-background-color: transparent;
+}

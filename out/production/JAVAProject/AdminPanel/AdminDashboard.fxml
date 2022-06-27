@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminPanel.AdminDashboardController">
+   <children>
+      <VBox prefHeight="140.0" prefWidth="58.0" style="-fx-background-color: #EBE8F9;" />
+      <VBox fx:id="slider_menu" layoutX="55.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="224.0" style="-fx-background-color: #EBE8F9;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="88.0">
+               <children>
+                  <ImageView fx:id="profilePicture" fitHeight="91.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin></ImageView>
+                  <ImageView fx:id="menuBar" fitHeight="35.0" fitWidth="30.0" onMouseClicked="#menuBar_MouseClicked" pickOnBounds="true" preserveRatio="true" translateX="72.0" translateY="8.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../images/menu-80.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="35.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <TextField fx:id="search" prefHeight="30.0" prefWidth="206.0" promptText="Search" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <font>
+                        <Font name="Calibri Light" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="Admin_HBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#adminManagement_MouseEntered" onMouseExited="#adminManagement_MouseExited" prefHeight="38.0" prefWidth="226.0">
+               <children>
+                  <Button fx:id="admin_management" alignment="BASELINE_LEFT" graphicTextGap="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#adminManagement_MouseClicked" prefHeight="35.0" prefWidth="216.0" style="-fx-background-color: transparent;" text="Administrator Management" textFill="#464646">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="User_HBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#UserManagement_MouseEntered" onMouseExited="#UserManagement_MouseExited" prefHeight="38.0" prefWidth="226.0">
+               <children>
+                  <Button fx:id="Userr" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#UserManagement_MouseClicked" prefHeight="35.0" prefWidth="214.0" style="-fx-background-color: transparent;" text="User Management" textFill="#464646">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="tunisia_HBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#TunisiaManagement_MouseEntered" onMouseExited="#TunisiaManagement_MouseExited" prefHeight="38.0" prefWidth="226.0">
+               <children>
+                  <Button fx:id="tunisia_management" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#TunisiaManagement_MouseClicked" prefHeight="35.0" prefWidth="226.0" style="-fx-background-color: transparent;" text="Tunisia Governorate Management" textFill="#464646">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="World_HBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#WorldManagement_MouseEntered" onMouseExited="#WorldManagement_MouseExited" prefHeight="38.0" prefWidth="226.0">
+               <children>
+                  <Button fx:id="world_management" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#WorldManagement_MouseClicked" prefHeight="35.0" prefWidth="214.0" style="-fx-background-color: transparent;" text="Other Countries' Management" textFill="#464646">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="Hospital_HBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#HospitalManagement_MouseEntered" onMouseExited="#HospitalManagement_MouseExited" prefHeight="38.0" prefWidth="226.0">
+               <children>
+                  <Button fx:id="hospital_management" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#HospitalManagement_MouseClicked" prefHeight="35.0" prefWidth="214.0" style="-fx-background-color: transparent;" text="Hospital Management" textFill="#464646">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="18.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="userDash_HBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#userDash_MouseEntered" onMouseExited="#userDash_MouseExited" prefHeight="38.0" prefWidth="226.0">
+               <children>
+                  <Button fx:id="userDash" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#userDash_MouseClicked" prefHeight="35.0" prefWidth="214.0" style="-fx-background-color: transparent;" text="Check User's Dashboard" textFill="#464646">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="SignOut_HBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#SIGNOUTManagement_MouseEntered" onMouseExited="#SIGNOUTManagement_MouseExited" prefHeight="38.0" prefWidth="226.0">
+               <children>
+                  <Button fx:id="signOut" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#SIGNOUT_MouseClicked" prefHeight="35.0" prefWidth="214.0" style="-fx-background-color: transparent;" text="Sign Out" textFill="#464646">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="menuSide" layoutY="127.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="55.0" style="-fx-background-color: #EBE8F9;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="127.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="40.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/search-100.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="3.0" top="15.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="admin" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#adminManagement_MouseEntered" onMouseExited="#adminManagement_MouseExited" prefHeight="38.0" prefWidth="52.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="30.0" onMouseClicked="#adminManagement_MouseClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/sql-database-administrators100.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="12.0" top="17.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox fx:id="userr_management" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="52.0">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="52.0" onMouseClicked="#UserManagement_MouseClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user-management-100.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox fx:id="tunisia" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#TunisiaManagement_MouseEntered" onMouseExited="#TunisiaManagement_MouseExited" prefHeight="38.0" prefWidth="52.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="60.0" onMouseClicked="#TunisiaManagement_MouseClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/tunisia.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox fx:id="world" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#WorldManagement_MouseEntered" onMouseExited="#WorldManagement_MouseExited" prefHeight="38.0" prefWidth="52.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="50.0" onMouseClicked="#WorldManagement_MouseClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Globe-100.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="4.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox fx:id="hospital" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#HospitalManagement_MouseEntered" onMouseExited="#HospitalManagement_MouseExited" prefHeight="38.0" prefWidth="52.0">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="52.0" onMouseClicked="#HospitalManagement_MouseClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Hospital-100.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="18.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox fx:id="sign_out" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseExited="#SIGNOUTManagement_MouseExited" prefHeight="38.0" prefWidth="52.0">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="45.0" onMouseClicked="#SIGNOUT_MouseClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/se_deconnecter.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox fx:id="sign_out1" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#SIGNOUTManagement_MouseEntered" onMouseExited="#SIGNOUTManagement_MouseExited" prefHeight="38.0" prefWidth="52.0">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="45.0" onMouseClicked="#userDash_MouseClicked" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../images/se_deconnecter.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="resultSide" layoutX="278.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1070.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="title_label" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="127.0" prefWidth="1500.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <HBox fx:id="show_admin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="1070.0" />
+         </children>
+      </VBox>
+      <ImageView fx:id="close" fitHeight="50.0" fitWidth="45.0" onMouseClicked="#close_MouseClicked" pickOnBounds="true" preserveRatio="true" translateX="1300.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../images/fermer-la-fenêtre-50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

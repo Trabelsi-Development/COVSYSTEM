@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hb" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserPanel.StatisticsWorld.StatisticsWController">
+   <children>
+      <VBox fx:id="vb" prefHeight="400.0" prefWidth="499.0">
+         <children>
+            <RadioButton fx:id="tc" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" text="Total Cases">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="td" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" text="Total Deaths">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="tr" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" text="Total Recovered">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="tsc" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" text="Total Serious Critical">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="nd" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" text="New Deaths">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="nc" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" text="New Cases">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="ac" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" text="Active Cases">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="dis" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" text="Distribution">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="dvr" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" text="Deaths VS Recovered">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+         </children>
+         <HBox.margin>
+            <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+         </HBox.margin>
+      </VBox>
+      <HBox fx:id="hb2" prefHeight="400.0" prefWidth="718.0">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="400.0" prefWidth="36.0" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="10.0" top="50.0" />
+         </HBox.margin></HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+</HBox>

@@ -1,0 +1,93 @@
+
+M
+java:S3740‡"/Provide the parametrized type for this generic.(Øáù8„Ğ¸š0
+M
+java:S3740ˆ"/Provide the parametrized type for this generic.(¬Éã«8’„Ğ¸š0
+R
+java:S3740‰"/Provide the parametrized type for this generic.(ß—Óêùÿÿÿÿ8“„Ğ¸š0
+R
+java:S3740Š"/Provide the parametrized type for this generic.(»´ÍÖÿÿÿÿÿ8”„Ğ¸š0
+R
+java:S3740‹"/Provide the parametrized type for this generic.(ˆîïÑûÿÿÿÿ8•„Ğ¸š0
+M
+java:S3740Œ"/Provide the parametrized type for this generic.(˜»§«8–„Ğ¸š0
+R
+java:S3740"/Provide the parametrized type for this generic.(úÃï ÿÿÿÿÿ8–„Ğ¸š0
+M
+java:S3740"/Provide the parametrized type for this generic.(ˆÍ½â8—„Ğ¸š0
+R
+java:S3740"/Provide the parametrized type for this generic.(å¬«µùÿÿÿÿ8˜„Ğ¸š0
+R
+java:S3740"/Provide the parametrized type for this generic.(Ìßğùÿÿÿÿ8™„Ğ¸š0
+R
+java:S3740‘"/Provide the parametrized type for this generic.(ÒşÃøûÿÿÿÿ8š„Ğ¸š0
+R
+java:S3740’"/Provide the parametrized type for this generic.(ÔâŞÌıÿÿÿÿ8›„Ğ¸š0
+R
+java:S3740“"/Provide the parametrized type for this generic.(“Õîşÿÿÿÿ8›„Ğ¸š0
+k
+java:S1192æ"MDefine a constant instead of duplicating this literal "ERROR DIALOG" 3 times.(ªİ”¨8¡„Ğ¸š0
+v
+java:S1192§"SDefine a constant instead of duplicating this literal "INFORMATION DIALOG" 3 times.(§½“¬üÿÿÿÿ8¢„Ğ¸š0
+n	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä¥¿›8¬„Ğ¸š0
+s	java:S117ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğŠ„Ìÿÿÿÿÿ8­„Ğ¸š0
+F
+java:S1604Œ"(Make this anonymous inner class a lambda(ÂÂ¹É8¯„Ğ¸š0
+K
+java:S1604”"(Make this anonymous inner class a lambda(–öò²şÿÿÿÿ8°„Ğ¸š0
+F
+java:S1604Í"(Make this anonymous inner class a lambda(µª—‘8±„Ğ¸š0
+F
+java:S1604Õ"(Make this anonymous inner class a lambda(«½º8²„Ğ¸š0
+E
+java:S1604”"(Make this anonymous inner class a lambda(šûñp8³„Ğ¸š0
+F
+java:S1604œ"(Make this anonymous inner class a lambda(şË÷8´„Ğ¸š0
+F
+java:S1604İ"(Make this anonymous inner class a lambda(ÂÂ¹É8µ„Ğ¸š0
+K
+java:S1604å"(Make this anonymous inner class a lambda(–öò²şÿÿÿÿ8¶„Ğ¸š0
+l
+java:S11043"OMake nbr a static final constant or non-public and provide accessors if needed.(Äöú‘8º„Ğ¸š0
+m
+java:S11043"PMake nbr2 a static final constant or non-public and provide accessors if needed.(Äöú‘8º„Ğ¸š0
+F
+java:S14443")Make this "public static nbr" field final(Äöú‘8¼„Ğ¸š0
+G
+java:S14443"*Make this "public static nbr2" field final(Äöú‘8¼„Ğ¸š0
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œ‘‘ø8É„Ğ¸š0
+e
+java:S3973‘"GUse indentation to denote the code conditionally executed by this "if".(†¿úÔ8Ì„Ğ¸š0
+S
+java:S3655½"5Call "action.isPresent()" before accessing the value.(£ÕÀÎ8ƒĞ¸š0
+q	java:S1166"URename this field "add_button" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û‡¨î8ŠĞ¸š0
+q	java:S116="PRename this field "IdCol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÛƒÃùÿÿÿÿ8‹Ğ¸š0
+y	java:S116?"XRename this field "first_nameCol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ¬ü»øÿÿÿÿ8ŒĞ¸š0
+x	java:S116A"WRename this field "last_nameCol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç›„Şÿÿÿÿÿ8ŒĞ¸š0
+B
+java:S16592"%Declare "yOffset" on a separate line.(ÔÃ8”Ğ¸š0
+?
+java:S16593""Declare "nbr2" on a separate line.(Äöú‘8•Ğ¸š0
+j	java:S100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­¹Ü8´Ğ¸š0
+o	java:S100b"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÅ°ûÿÿÿÿ8¸Ğ¸š0
+o	java:S100i"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹Ùºåşÿÿÿÿ8»Ğ¸š0
+S
+java:S2696j"6Make the enclosing method "static" or remove this set.(›•©ò8ÄĞ¸š0
+R
+java:S2209p"5Change this instance-reference to a static reference.(äáÑ„8ØĞ¸š0
+S
+java:S2696z"6Make the enclosing method "static" or remove this set.(šäòò8ßĞ¸š0
+R
+java:S2209z"5Change this instance-reference to a static reference.(šäòò8àĞ¸š0
+S
+java:S2209‡"5Change this instance-reference to a static reference.(ŸÆÕµ8íĞ¸š0
+J
+java:S1602Ÿ",Remove useless curly braces around statement(„÷óÕ8”Ğ¸š0
+S
+java:S2696î"6Make the enclosing method "static" or remove this set.(åàG8º‘Ğ¸š0
+Q
+java:S1874’"3Remove this use of "impl_getUrl"; it is deprecated.(û•­ˆ8ß‘Ğ¸š0
+O
+java:S1602§",Remove useless curly braces around statement(Ê­›úÿÿÿÿ8ê‘Ğ¸š0
+Y
+java:S2696Õ"6Make the enclosing method "static" or remove this set.(ãïîËıÿÿÿÿ8û‘Ğ¸š0

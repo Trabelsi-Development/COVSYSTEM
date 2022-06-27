@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="1054.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Register_SignInForms.SIGNINFormController">
+   <children>
+      <ImageView fx:id="rightSide" fitHeight="598.0" fitWidth="628.0" layoutX="447.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/rightside-signin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftSide" fitHeight="634.0" fitWidth="520.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/leftsignin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="back" fitHeight="70.0" fitWidth="50.0" layoutX="10.0" layoutY="550.0" onMouseClicked="#backMouseClicked" onMouseEntered="#backMouseEntered" onMouseExited="#backMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back-50.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="signIn" fitHeight="53.0" fitWidth="155.0" layoutX="754.0" layoutY="25.0" onMouseEntered="#signinMouseEntered" onMouseExited="#signinMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/signin-above.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="SignUp" fitHeight="53.0" fitWidth="155.0" layoutX="870.0" layoutY="25.0" onMouseClicked="#signupMouseClicked" onMouseEntered="#signupMouseEntered" onMouseExited="#signupMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/signup-above.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="signin_with" layoutX="670.0" layoutY="120.0" text="SIGN IN WITH">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="facebook" fitHeight="70.0" fitWidth="80.0" layoutX="637.0" layoutY="170.0" onMouseClicked="#facebookMouseClicked" onMouseEntered="#facebookMouseEntered" onMouseExited="#facebookMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/facebook-100.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="twitter" fitHeight="70.0" fitWidth="80.0" layoutX="733.0" layoutY="170.0" onMouseClicked="#twitterMouseClicked" onMouseEntered="#twitterMouseEntered" onMouseExited="#twitterMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/twitter-100.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="google" fitHeight="70.0" fitWidth="80.0" layoutX="829.0" layoutY="170.0" onMouseClicked="#googleMouseClicked" onMouseEntered="#googleMouseEntered" onMouseExited="#googleMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/google-plus-100.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Separator layoutX="622.0" layoutY="255.0" prefHeight="3.0" prefWidth="291.0" style="-fx-border-color: D085AB;" />
+      <Label fx:id="loginn" layoutX="533.0" layoutY="280.0" text="LOGIN :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="login" layoutX="533.0" layoutY="315.0" prefHeight="25.0" prefWidth="475.0" promptText="Please enter your login here">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrLogin" layoutX="535.0" layoutY="343.0" textFill="#d085ab">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordd" layoutX="533.0" layoutY="379.0" text="PASSWORD :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="533.0" layoutY="414.0" prefHeight="25.0" prefWidth="475.0" promptText="Please enter your password here">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <TextField fx:id="passwordtxt" layoutX="533.0" layoutY="414.0" onKeyReleased="#passwordtxtKeyReleased" prefHeight="25.0" prefWidth="475.0" promptText="Please enter your password here" />
+      <ImageView fx:id="show_pwd" fitHeight="20.0" fitWidth="20.0" layoutX="1013.0" layoutY="416.0" onMouseClicked="#showpwdClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/eye-20.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="hide_pwd" fitHeight="20.0" fitWidth="20.0" layoutX="1013.0" layoutY="416.0" onMouseClicked="#hidepwdClicked" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../images/hide-20.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="forgotpwd" layoutX="533.0" layoutY="438.0" onAction="#forgot_pwdClicked" style="-fx-background-color: TRANSPARENT;" text="Forgot your password ?" underline="true" />
+      <Label fx:id="ErrPwd" layoutX="535.0" layoutY="461.0" textFill="#d085ab">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="remember_me" layoutX="535.0" layoutY="505.0" mnemonicParsing="false" text="Remember me">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <ImageView fx:id="signinn" fitHeight="70.0" fitWidth="150.0" layoutX="870.0" layoutY="540.0" onMouseClicked="#signin_saveMouseClicked" onMouseEntered="#signin_saveMouseEntered" onMouseExited="#signin_saveMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/signin-save.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

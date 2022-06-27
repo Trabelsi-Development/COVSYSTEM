@@ -1,0 +1,6 @@
+
+X	java:S110"<This class has 6 parents which is greater than 5 authorized.(ßÔÁ‡8àşÏ¸š0
+W	java:S1102"<This class has 7 parents which is greater than 5 authorized.(ª¸ô78áşÏ¸š0
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(ñğÿ8åşÏ¸š0
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºÖàÍøÿÿÿÿ8çşÏ¸š0

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminPanel.HospitalManagement.HospitalManagementDetailsController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+         <children>
+            <TableView fx:id="myTableViewDetails" layoutX="60.0" layoutY="65.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="510.0" stylesheets="@HospitalManagementDesign.css" AnchorPane.bottomAnchor="18.0" AnchorPane.topAnchor="25.0">
+               <columns>
+                  <TableColumn fx:id="supply_needsCol" editable="false" prefWidth="170.0" sortable="false" text="Supply Needs" />
+                  <TableColumn fx:id="equip_needsCol" editable="false" prefWidth="170.0" sortable="false" text="Equipment Needs" />
+                  <TableColumn fx:id="donation_needsCol" editable="false" prefWidth="170.0" sortable="false" text="Donation Needs" />
+               </columns>
+            </TableView>
+            <ImageView fx:id="back" fitHeight="70.0" fitWidth="50.0" layoutY="336.0" onMouseClicked="#backMouseClicked" onMouseEntered="#backMouseEntered" onMouseExited="#backMouseExited" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/back-arrowHospital-60.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

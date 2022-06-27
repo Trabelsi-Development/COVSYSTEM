@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminPanel.AdminManagement.AdministratorManagementController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1300.0">
+         <children>
+            <TableView fx:id="myTableView" layoutX="10.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="1218.0" stylesheets="@AdministratorManagementDesign.css" AnchorPane.bottomAnchor="13.0" AnchorPane.topAnchor="14.0">
+              <columns>
+                  <TableColumn fx:id="IdCol" prefWidth="50.0" sortable="false" text="ID" />
+                <TableColumn fx:id="first_nameCol" prefWidth="120.0" sortable="false" text="First name" />
+                <TableColumn fx:id="last_nameCol" prefWidth="120.0" sortable="false" text="Last name" />
+                  <TableColumn fx:id="birthdateCol" sortable="false" text="Birthdate" />
+                  <TableColumn fx:id="genderCol" sortable="false" text="Gender" />
+                  <TableColumn fx:id="professionCol" sortable="false" text="Profession" />
+                  <TableColumn fx:id="addressCol" prefWidth="120.0" sortable="false" text="Address" />
+                  <TableColumn fx:id="emailCol" prefWidth="130.0" sortable="false" text="Email" />
+                  <TableColumn fx:id="loginCol" prefWidth="120.0" sortable="false" text="LOGIN" />
+                  <TableColumn fx:id="passwordCol" prefWidth="130.0" sortable="false" text="Password" />
+                  <TableColumn fx:id="profilePictureCol" prefWidth="100.0" sortable="false" style="-fx-alignment: CENTER;" text="Profile Picture" />
+                  <TableColumn fx:id="editCol" editable="false" prefWidth="55.0" resizable="false" sortable="false" style="-fx-alignment: CENTER;" text="Edit" />
+                  <TableColumn fx:id="deleteCol" prefWidth="55.0" resizable="false" sortable="false" style="-fx-alignment: CENTER;" text="Delete" />
+              </columns>
+            </TableView>
+            <ImageView fx:id="add_button" fitHeight="54.0" fitWidth="50.0" layoutX="1239.0" layoutY="190.0" onMouseClicked="#add_button_MouseClicked" onMouseEntered="#add_button_MouseEntered" onMouseExited="#add_button_MouseExited" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1239.0" AnchorPane.rightAnchor="7.0">
+               <image>
+                  <Image url="@../../images/add-100.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

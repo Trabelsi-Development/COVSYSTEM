@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="654.0" prefWidth="546.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminPanel.HospitalManagement.AddHospitalDetailsController">
+   <children>
+      <ImageView fx:id="rightSide" fitHeight="701.0" fitWidth="585.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/rightside-signup.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="add_title" layoutX="174.0" layoutY="38.0" text="ADD A HOSPITAL" textFill="#f27c7c">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="general_informations" layoutX="251.0" layoutY="68.0" text="(details)" textFill="#f27c7c">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="hospitalname" layoutX="72.0" layoutY="143.0" text="Hospital Name :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hospitalName" disable="true" editable="false" layoutX="71.0" layoutY="166.0" prefHeight="25.0" prefWidth="191.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="cityname" layoutX="321.0" layoutY="143.0" text="City Name :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cityName" disable="true" editable="false" layoutX="319.0" layoutY="166.0" prefHeight="25.0" prefWidth="191.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="supply_needs" layoutX="71.0" layoutY="219.0" text="Supply Needs :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="supplyNeedsArea" layoutX="70.0" layoutY="242.0" prefHeight="82.0" prefWidth="441.0" />
+      <Label fx:id="equipment_needs" layoutX="71.0" layoutY="354.0" text="Equipment Needs :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="EquipmentNeedsArea" layoutX="70.0" layoutY="377.0" prefHeight="82.0" prefWidth="441.0" />
+      <Label fx:id="donation_needs" layoutX="71.0" layoutY="489.0" text="Donation Needs :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="DonationNeedsArea" layoutX="70.0" layoutY="512.0" prefHeight="82.0" prefWidth="441.0" />
+      <Button fx:id="saveAdd" contentDisplay="RIGHT" layoutX="432.0" layoutY="632.0" mnemonicParsing="false" onMouseClicked="#saveAdd_MouseClicked" onMouseEntered="#saveAdd_MouseEntered" onMouseExited="#saveAdd_MouseExited" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #F27C7C; -fx-background-radius: 15;" text="SAVE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="back" fitHeight="70.0" fitWidth="50.0" layoutX="46.0" layoutY="637.0" onMouseClicked="#backMouseClicked" onMouseEntered="#backMouseEntered" onMouseExited="#backMouseExited" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../../images/back-arrowHospital-60.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

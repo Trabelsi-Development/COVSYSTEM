@@ -1,0 +1,11 @@
+
+]	java:S110T"<This class has 7 parents which is greater than 5 authorized.(ğé†Ñøÿÿÿÿ8»úÏ¸š0
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(ñğÿ8ËúÏ¸š0
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºÖàÍøÿÿÿÿ8ÛúÏ¸š0
+[
+java:S5993"9Change the visibility of this constructor to "protected".(¾–¬óÿÿÿÿÿ8çûÏ¸š0
+H
+java:S1452"&Remove usage of generic wildcard type.(œñ„ïşÿÿÿÿ8óüÏ¸š0
+H
+java:S1452"&Remove usage of generic wildcard type.(œñ„ïşÿÿÿÿ8†ıÏ¸š0

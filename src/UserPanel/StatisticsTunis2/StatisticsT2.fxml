@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hb" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserPanel.StatisticsTunis2.StatisticsT2Controller">
+   <children>
+      <VBox fx:id="vb" prefHeight="400.0" prefWidth="526.0">
+         <children>
+            <RadioButton fx:id="gender" mnemonicParsing="false" prefHeight="71.0" prefWidth="350.0" stylesheets="@../Staticsdesign.css" text="Per Gender">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="age" mnemonicParsing="false" prefHeight="71.0" prefWidth="350.0" stylesheets="@../Staticsdesign.css" text="Per Age">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="cases" mnemonicParsing="false" prefHeight="71.0" prefWidth="350.0" stylesheets="@../Staticsdesign.css" text="Per states case">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="foreign" mnemonicParsing="false" prefHeight="71.0" prefWidth="350.0" stylesheets="@../Staticsdesign.css" text="Domestic cases and imported cases">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="HospitalCases" mnemonicParsing="false" prefHeight="71.0" prefWidth="350.0" stylesheets="@../Staticsdesign.css" text="Total Hospital Cases">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="BedsAv" mnemonicParsing="false" prefHeight="71.0" prefWidth="350.0" stylesheets="@../Staticsdesign.css" text="Beds available">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="HospitalInfo" mnemonicParsing="false" prefHeight="71.0" prefWidth="350.0" stylesheets="@../Staticsdesign.css" text="Hospital states">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+         </children>
+         <HBox.margin>
+            <Insets bottom="10.0" left="20.0" top="30.0" />
+         </HBox.margin>
+      </VBox>
+      <HBox fx:id="hb2" prefHeight="400.0" prefWidth="701.0">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="400.0" prefWidth="24.0" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="10.0" top="50.0" />
+         </HBox.margin></HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+</HBox>

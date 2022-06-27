@@ -1,0 +1,9 @@
+
+h
+8src/UserPanel/ProgressIndic/ProgressCircleIndicator.java,6\8\68d73dc55703b89abb0f41f7916f5015d06b515e
+f
+6src/UserPanel/ProgressIndic/RingProgressIndicator.java,3\6\362e8a8eff8d5ab797752b18a11c5b0af1813537
+u
+Esrc/AdminPanel/AdminManagement/AdministratorManagementController.java,8\d\8d3ed9ca9877a26a587d71980886077000c6e648
+M
+src/COVSYSTEMApplication.java,d\9\d9474ca9c91324228aba25aa1001c2d042903057

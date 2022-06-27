@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Welcome.WelcomePageController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="782.0">
+         <children>
+            <VBox layoutX="6.0" layoutY="2.0" prefHeight="509.0" prefWidth="1000.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="68.0" prefWidth="1000.0" style="-fx-color: red;" text="Coronavirus Cases:" textFill="DIMGRAY" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="System Italic" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Cases" alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="68.0" prefWidth="1000.0" style="-fx-color: red;" text="20002564" textFill="#8b8bff" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="40.0" prefWidth="780.0" style="-fx-color: red;" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="327.0" prefWidth="1000.0">
+                     <children>
+                        <VBox prefHeight="150.0" prefWidth="330.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="68.0" prefWidth="616.0" style="-fx-color: red;" text="Recovered" textFill="DIMGRAY" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font name="System Italic" size="41.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Recovered" alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="68.0" prefWidth="616.0" style="-fx-color: red;" text="20002564" textFill="#aaaaaa" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font name="System Bold" size="41.0" />
+                                 </font>
+                              </Label>
+                              <HBox fx:id="Hrecovered" prefHeight="167.0" prefWidth="330.0">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="15.0" left="50.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="150.0" prefWidth="332.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="68.0" prefWidth="616.0" style="-fx-color: red;" text="Deaths:" textFill="DIMGRAY" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font name="System Italic" size="41.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Deaths" alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="68.0" prefWidth="616.0" style="-fx-color: red;" text="20002564" textFill="RED" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font name="System Bold" size="41.0" />
+                                 </font>
+                              </Label>
+                              <HBox fx:id="Hdeaths" prefHeight="167.0" prefWidth="330.0">
+                                 <VBox.margin>
+                                    <Insets bottom="15.0" left="50.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="150.0" prefWidth="312.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="68.0" prefWidth="616.0" style="-fx-color: red;" text="Active" textFill="DIMGRAY" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font name="System Italic" size="41.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="active" alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="68.0" prefWidth="616.0" style="-fx-color: red;" text="20002564" textFill="#aaaaaa" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font name="System Bold" size="41.0" />
+                                 </font>
+                              </Label>
+                              <HBox fx:id="Hactive" prefHeight="167.0" prefWidth="330.0">
+                                 <VBox.margin>
+                                    <Insets bottom="15.0" left="50.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

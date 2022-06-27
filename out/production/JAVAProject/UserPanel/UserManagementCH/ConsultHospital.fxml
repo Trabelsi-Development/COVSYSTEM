@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserPanel.UserManagementCH.ConsultHospitalController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="1020.0" style="-fx-background-color: transparent;">
+         <children>
+            <TableView fx:id="mytable_view" layoutY="112.0" prefHeight="302.0" prefWidth="1000.0" stylesheets="@UserManagementCHdesign.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0">
+              <columns>
+                <TableColumn fx:id="name" prefWidth="120.0" text="Name " />
+                  <TableColumn fx:id="city" prefWidth="120.0" text="City Name" />
+                <TableColumn fx:id="AvailableCases" prefWidth="129.0" text="Available Cases " />
+                  <TableColumn fx:id="AvailableBeds" prefWidth="125.0" text="Available Beds" />
+                  <TableColumn fx:id="Doctors" prefWidth="125.0" text="Docotrs " />
+                  <TableColumn fx:id="Rooms" prefWidth="125.0" text="Rooms" />
+                  <TableColumn fx:id="TotalTests" prefWidth="125.0" text="Total Tests" />
+                  <TableColumn fx:id="Needs" prefWidth="141.0" text="Needs" />
+              </columns>
+            </TableView>
+            <ImageView fx:id="exit2" fitHeight="47.0" fitWidth="53.0" layoutX="795.0" layoutY="221.0" onMouseClicked="#exit2MouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons8-annuler-50.png" />
+               </image>
+            </ImageView>
+                  <ComboBox fx:id="cmb_search" layoutX="325.0" layoutY="35.0" onAction="#btn_SearchClick" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #59DBBE;" />
+            <Label fx:id="Lab_title" layoutX="143.0" layoutY="40.0" prefHeight="20.0" prefWidth="169.0" text="Choose a specific Hospital">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date" layoutX="604.0" layoutY="36.0" onAction="#btn_SearchClick" prefHeight="30.0" prefWidth="150.0" />
+            <Label layoutX="489.0" layoutY="40.0" prefHeight="20.0" prefWidth="140.0" style="-fx-background-color: 2ECC71;" stylesheets="@UserManagementCHdesign.css" text="in a specific date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="Needs_view" layoutX="249.0" layoutY="190.0" prefHeight="166.0" prefWidth="579.0" stylesheets="@UserManagementCHNeedsdesign.css">
+               <columns>
+                  <TableColumn fx:id="EQUIPMENTNEEDS" prefWidth="192.0" text="EQUIPMENT NEEDS" />
+                  <TableColumn fx:id="SUPPLYNEEDS" prefWidth="199.0" text="SUPPLY NEEDS" />
+                  <TableColumn fx:id="DONATIONSNEEDS" prefWidth="199.0" text="DONATION NEEDS" />
+               </columns>
+            </TableView>
+            <ImageView fx:id="btn_print" fitHeight="53.0" fitWidth="59.0" layoutX="951.0" layoutY="60.0" onMouseClicked="#btn_printMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/impression.png" />
+               </image>
+            </ImageView>
+            
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+</HBox>

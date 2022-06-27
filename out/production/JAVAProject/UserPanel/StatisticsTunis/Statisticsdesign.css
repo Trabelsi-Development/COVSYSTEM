@@ -1,0 +1,5 @@
+
+.radio-button:selected .radio {
+    -fx-border-color: #C2B5E7;
+    -fx-border-radius: 130px;
+}

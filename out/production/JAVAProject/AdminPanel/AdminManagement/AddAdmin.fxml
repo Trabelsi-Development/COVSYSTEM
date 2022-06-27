@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminPanel.AdminManagement.AddAdminController">
+   <children>
+      <ImageView fx:id="rightSide" fitHeight="826.0" fitWidth="593.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/rightside-signup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="profilePicture" fitHeight="104.0" fitWidth="116.0" layoutX="58.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <image>
+            <Image url="@../../images/addAdmin-100.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="add_title" layoutX="129.0" layoutY="20.0" text="ADD AN ADMINISTRATOR" textFill="#8291ff">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="imageChooser" layoutX="190.0" layoutY="109.0" onMouseClicked="#imageChooser_MouseClicked" text="Choose the new administrator's photo " textFill="#8291ff" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="id_admin_label" layoutX="63.0" layoutY="188.0" text="ID Administrator :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id_admin_txt" disable="true" editable="false" layoutX="210.0" layoutY="186.0" prefHeight="25.0" prefWidth="135.0" />
+      <Label fx:id="firstname" layoutX="64.0" layoutY="230.0" text="First name :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstName" layoutX="63.0" layoutY="253.0" prefHeight="25.0" prefWidth="191.0" promptText="Please write his/her first name ">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrFirstName" layoutX="63.0" layoutY="281.0" textFill="#8291ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="last_name" layoutX="313.0" layoutY="230.0" text="Last name :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastName" layoutX="312.0" layoutY="253.0" prefHeight="25.0" prefWidth="191.0" promptText="Please write his/her last name">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrLastName" layoutX="312.0" layoutY="281.0" textFill="#8291ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="birthdate" layoutX="64.0" layoutY="314.0" text="Birth date :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="BirthDate" editable="false" layoutX="63.0" layoutY="336.0" prefHeight="25.0" prefWidth="191.0" promptText="Please select his/her birth date">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </DatePicker>
+      <Label fx:id="ErrBirthDate" layoutX="63.0" layoutY="364.0" textFill="#8291ff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="gender" layoutX="313.0" layoutY="314.0" text="Gender :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="male" layoutX="327.0" layoutY="339.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="groupButton" />
+         </toggleGroup>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="407.0" layoutY="339.0" mnemonicParsing="false" text="Female" toggleGroup="$groupButton">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <Label fx:id="ErrGender" layoutX="311.0" layoutY="364.0" textFill="#8291ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="professionn" layoutX="64.0" layoutY="397.0" text="Profession :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="profession" layoutX="63.0" layoutY="419.0" prefHeight="25.0" prefWidth="195.0" promptText="Please select his/her profession" visibleRowCount="12">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label fx:id="ErrProfession" layoutX="63.0" layoutY="447.0" textFill="#8291ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="addresss" layoutX="313.0" layoutY="397.0" text="Address :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="address" layoutX="311.0" layoutY="419.0" prefHeight="25.0" prefWidth="191.0" promptText="Please write his/her address ">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrAddress" layoutX="311.0" layoutY="447.0" textFill="#8291ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="emaill" layoutX="64.0" layoutY="480.0" text="Email address :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="63.0" layoutY="502.0" prefHeight="25.0" prefWidth="443.0" promptText="username@example.com">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrEmail" layoutX="63.0" layoutY="530.0" textFill="#8291ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="login_label" layoutX="64.0" layoutY="563.0" text="LOGIN :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="login" layoutX="63.0" layoutY="585.0" onKeyReleased="#login_KeyReleased" prefHeight="25.0" prefWidth="191.0" promptText="Please choose his/her login">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrLogin" layoutX="63.0" layoutY="613.0" textFill="#8291ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="login_existance" layoutX="210.0" layoutY="613.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="login_existance_png" fitHeight="20.0" fitWidth="20.0" layoutX="190.0" layoutY="613.0" onMouseClicked="#showpwdClicked" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="passwordd" layoutX="313.0" layoutY="563.0" text="Password :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passwordtxt" layoutX="311.0" layoutY="585.0" onKeyReleased="#passwordtxtKeyReleased" prefHeight="25.0" prefWidth="191.0" promptText="Please choose a secure password" />
+      <PasswordField fx:id="password" layoutX="311.0" layoutY="585.0" onKeyReleased="#passwordKeyReleased" prefHeight="25.0" prefWidth="191.0" promptText="Please choose a secure password">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <Label fx:id="ErrPassword" layoutX="311.0" layoutY="613.0" textFill="#8291ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="security" layoutX="455.0" layoutY="613.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="hide_pwd" fitHeight="20.0" fitWidth="20.0" layoutX="510.0" layoutY="587.0" onMouseClicked="#hidepwdClicked" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../../images/hide-20.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="show_pwd" fitHeight="20.0" fitWidth="20.0" layoutX="510.0" layoutY="587.0" onMouseClicked="#showpwdClicked" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../../images/eye-20.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="back" fitHeight="70.0" fitWidth="50.0" layoutX="30.0" layoutY="653.0" onMouseClicked="#backMouseClicked" onMouseEntered="#backMouseEntered" onMouseExited="#backMouseExited" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../../images/back-arrow-60_Admin.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="saveAdd" layoutX="421.0" layoutY="653.0" mnemonicParsing="false" onMouseClicked="#saveAddButton_MouseClicked" onMouseEntered="#saveAddButton_MouseEntered" onMouseExited="#saveAddButton_MouseExited" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #8291FF; -fx-background-radius: 15;" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="deleteMyImage" layoutX="190.0" layoutY="145.0" onMouseClicked="#deleteMyImage_MouseClicked" text="Delete the current image" textFill="#8291ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

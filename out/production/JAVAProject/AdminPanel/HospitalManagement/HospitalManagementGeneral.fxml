@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminPanel.HospitalManagement.HospitalManagementGeneralController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="1320.0">
+         <children>
+            <TableView fx:id="myTableView" layoutX="20.0" layoutY="65.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="1210.0" stylesheets="@HospitalManagementDesign.css" AnchorPane.bottomAnchor="18.0" AnchorPane.topAnchor="65.0">
+               <columns>
+                  <TableColumn fx:id="hospital_nameCol" editable="false" prefWidth="170.0" sortable="false" text="Hospital Name" />
+                  <TableColumn fx:id="hospitalized_casesCol" editable="false" prefWidth="120.0" sortable="false" text="Hospitalized  Cases" />
+                  <TableColumn fx:id="available_bedsCol" editable="false" prefWidth="120.0" sortable="false" text="Available Beds" />
+                  <TableColumn fx:id="doctors_numberCol" editable="false" prefWidth="120.0" sortable="false" text="Doctors Number" />
+                  <TableColumn fx:id="rooms_numberCol" editable="false" prefWidth="120.0" sortable="false" text="Rooms Number" />
+                  <TableColumn fx:id="total_testsCol" editable="false" prefWidth="120.0" sortable="false" text="Total Tests" />
+                  <TableColumn fx:id="city_nameCol" editable="false" prefWidth="120.0" sortable="false" text="City Name" />
+                  <TableColumn fx:id="date_updateCol" editable="false" sortable="false" text="Update Date" />
+                  <TableColumn fx:id="editCol" editable="false" prefWidth="55.0" resizable="false" sortable="false" style="-fx-alignment: CENTER;" text="Edit" />
+                  <TableColumn fx:id="deleteCol" editable="false" prefWidth="55.0" resizable="false" sortable="false" style="-fx-alignment: CENTER;" text="Delete" />
+                  <TableColumn fx:id="detailsCol" editable="false" prefWidth="130.0" resizable="false" sortable="false" style="-fx-alignment: CENTER;" text="Details" />
+               </columns>
+            </TableView>
+            <ImageView fx:id="add_button" fitHeight="54.0" fitWidth="50.0" layoutX="1230.0" layoutY="190.0" onMouseClicked="#add_button_MouseClicked" onMouseEntered="#add_button_MouseEntered" onMouseExited="#add_button_MouseExited" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1240.0" AnchorPane.rightAnchor="7.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/addHospital-100.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="specificHospital" layoutX="395.0" layoutY="20.0" onAction="#specificHospitalAction" prefWidth="150.0" style="-fx-background-color: #F27C7C; -fx-background-radius: 10;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <DatePicker fx:id="specificDate" editable="false" layoutX="749.0" layoutY="20.0" onAction="#specificDateAction" style="-fx-background-color: #F27C7C;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </DatePicker>
+            <Label layoutX="131.0" layoutY="23.0" text="You can check information hospital :">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="622.0" layoutY="23.0" text="in a specific date :">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="952.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#resetDate_MouseClicked" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #F27C7C; -fx-background-radius: 10;" text="RESET DATE" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="UNDO" size="1.2em" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

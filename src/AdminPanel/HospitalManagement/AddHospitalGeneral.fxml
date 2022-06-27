@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="654.0" prefWidth="546.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminPanel.HospitalManagement.AddHospitalGeneralController">
+   <children>
+      <ImageView fx:id="rightSide" fitHeight="654.0" fitWidth="567.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/rightside-signup.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="add_title" layoutX="158.0" layoutY="49.0" text="ADD A HOSPITAL" textFill="#f27c7c">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="general_informations" layoutX="165.0" layoutY="79.0" text="(general informations)" textFill="#f27c7c">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="hospitalname" layoutX="55.0" layoutY="164.0" text="Hospital Name :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hospitalName" layoutX="54.0" layoutY="187.0" onKeyReleased="#hospital_KeyReleased" prefHeight="25.0" prefWidth="191.0" promptText="Please write the hospital name ">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrHospitalName" layoutX="54.0" layoutY="215.0" textFill="#f27c7c">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="hospitalExistance_png" fitHeight="25.0" fitWidth="31.0" layoutX="258.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="hospitalExistance" layoutX="283.0" layoutY="191.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="hospitalized_cases" layoutX="55.0" layoutY="260.0" text="Hospitalized Cases :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hospitalizedCases" layoutX="54.0" layoutY="282.0" prefHeight="25.0" prefWidth="191.0" promptText="Please write the hospitalized cases">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrHospitalizedCases" layoutX="54.0" layoutY="310.0" textFill="#f27c7c">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="available_beds" layoutX="304.0" layoutY="260.0" text="Available Beds :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="availableBeds" layoutX="302.0" layoutY="282.0" prefHeight="25.0" prefWidth="191.0" promptText="Please write the available beds">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrAvailableBeds" layoutX="302.0" layoutY="310.0" textFill="#f27c7c">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="doctors_number" layoutX="55.0" layoutY="344.0" text="Number of Doctors :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="doctorsNumber" layoutX="54.0" layoutY="366.0" prefHeight="25.0" prefWidth="191.0" promptText="Please write the number of doctors">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrDoctorsNumber" layoutX="54.0" layoutY="394.0" textFill="#f27c7c">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="rooms_number" layoutX="304.0" layoutY="343.0" text="Number of Rooms :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="roomsNumber" layoutX="302.0" layoutY="365.0" prefHeight="25.0" prefWidth="191.0" promptText="Please write the number of rooms">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrRoomsNumber" layoutX="302.0" layoutY="393.0" textFill="#f27c7c">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="total_tests" layoutX="55.0" layoutY="426.0" text="Total Tests :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalTests" layoutX="54.0" layoutY="448.0" prefHeight="25.0" prefWidth="191.0" promptText="Please write the total tests">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="ErrTotalTests" layoutX="54.0" layoutY="468.0" textFill="#f27c7c">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="city_name" layoutX="304.0" layoutY="426.0" text="City Name :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="CityName_cmb" layoutX="302.0" layoutY="448.0" prefHeight="25.0" prefWidth="191.0" promptText="Please select a city name" style="-fx-background-color: #F27C7C;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label fx:id="ErrCityName" layoutX="302.0" layoutY="473.0" textFill="#f27c7c">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="nextButton" contentDisplay="RIGHT" layoutX="416.0" layoutY="572.0" mnemonicParsing="false" onMouseClicked="#saveNextButton_MouseClicked" onMouseEntered="#saveNextButton_MouseEntered" onMouseExited="#saveNextButton_MouseExited" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #F27C7C; -fx-background-radius: 15;" text="NEXT" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="ANGLE_DOUBLE_RIGHT" size="1.3em" textAlignment="RIGHT" />
+         </graphic>
+      </Button>
+      <ImageView fx:id="back" fitHeight="70.0" fitWidth="50.0" layoutX="30.0" layoutY="570.0" onMouseClicked="#backMouseClicked" onMouseEntered="#backMouseEntered" onMouseExited="#backMouseExited" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../../images/back-arrowHospital-60.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
