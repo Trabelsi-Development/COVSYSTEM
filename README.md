@@ -1,4 +1,18 @@
-# COVSYSTEM
-JAVA Desktop Application (JavaFx)
+# CORONAVIRUSPANDEMIC TRACKER
+ COVSYSTEM is a Java Desktop Application (JavaFx) for detailed monitoring of the evolution of this COVID-19 pandemic in our country with a general monitoring of its evolution at the global level. Two shutters are therefore to be provided in this application:
+  1) Tunisia component: The application must provide as much as possible, the important details of the evolution of the pandemic in Tunisia, such as for example: the total number of cases affected by the disease, number of new cases each day, total number of deaths, the number of deaths each day, total number of tests carried out, number of tests performed per day, etc. These numbers must also be available for each governorate of the country. The application must also allow a minimum follow-up of hospitals in providing for each hospital, the number of hospitalized cases and the number of beds still available in intensive care, requests for supplies or equipment missing, calls for donations, etc.
+  2) Other countries of the world section: The application only needs to provide some information general on some countries of the world, such as the total number of cases, number of deaths, etc.
+
+The Coronavirus pandemic monitoring application to be developed must be able to be used by: 
+  1) An administrator who manages the update of database data including the management of the governorates of Tunisia. This management includes the addition of
+governorates as well as the entry and update of data associated with these governorates. New data from each governorate should be added every day. The management of hospitals in Tunisia. This management includes the addition of hospitals as well as entering and updating the data associated with each hospital. The management of other countries in the world. This management includes the addition of new countries as well as entering and updating the data associated with each country. The news data for each country must be added every day.
+  2) Users who will consult the available data Monitoring the pandemic in Tunisia. They can view general information about the country, on a specific date (the total number of cases affected by the disease, number of new cases at this date, total number of deaths, total number of tests performed, total number of hospitalized cases, etc.), consult this same information for a specific governorate, on a date determined, print the consulted data (on a text file), monitor the state of hospitals in Tunisia. All users (including administrator) can consult the general status of hospitals, by viewing the list of hospitals and by indicating for each, the number of hospitalized cases, the number of beds currently available and possibly supply needs, equipment or donations, print the general state of hospitals (on a text file), view details of a specific hospital, monitor the pandemic in other countries of the world. They can also consult the global situation of the countries of the world, on a given date, in viewing the list of countries and indicating for each, the total number of cases who were affected by the disease, the total number of deaths and consult this same situation for a specific country, on a specific date.
+  
+This application also includes the drawing of curves, graphs, etc. showing the evolution of the pandemic over the days, statistics including other data such as the gender of the cases affected (male / women), their age groups, etc.
+
+For more details, see these two PDFs; the first one explain what must the application offers as services and the second one shows the final result: 
+[Projet Javav 2020.pdf](https://github.com/Trabelsi-Development/COVSYSTEM/files/8995853/Projet.Javav.2020.pdf)
+[Rapport2020-COVSYSTEM (Trabelsi Abir).pdf](https://github.com/Trabelsi-Development/COVSYSTEM/files/8995872/Rapport2020-COVSYSTEM.Trabelsi.Abir.pdf)
+
 
 P.S.: This application is developed using JAVA 8
