@@ -9,7 +9,7 @@ The Coronavirus pandemic monitoring application to be developed must be able to 
   
 This application also includes charts showing the evolution of the pandemic over the days, statistics including other data such as the gender of the cases affected (male/female), their age groups, etc.
 
-For more details, see these two PDFs; the first one explain what must the application offers as services and the second one shows the final result: <br/> [Projet Javav 2020.pdf](https://github.com/Trabelsi-Development/COVSYSTEM/files/8995853/Projet.Javav.2020.pdf)<br/> [Rapport2020-COVSYSTEM (Trabelsi Abir).pdf](https://github.com/Trabelsi-Development/COVSYSTEM/files/8995872/Rapport2020-COVSYSTEM.Trabelsi.Abir.pdf)
+For more details, see these two PDFs; the first one explain what must the application offer as services and the second one shows the final result: <br/> [Projet Javav 2020.pdf](https://github.com/Trabelsi-Development/COVSYSTEM/files/8995853/Projet.Javav.2020.pdf)<br/> [Rapport2020-COVSYSTEM (Trabelsi Abir).pdf](https://github.com/Trabelsi-Development/COVSYSTEM/files/8995872/Rapport2020-COVSYSTEM.Trabelsi.Abir.pdf)
 
 
 P.S.: This application is developed using JAVA 8
